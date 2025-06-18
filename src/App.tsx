@@ -1,12 +1,15 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import CatListPage from '@/pages/CatListPage'
+import Layout from './components/Layout'
+import MainPage from './pages/MainPage/MainPage'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<CatListPage />} />
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<MainPage />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )

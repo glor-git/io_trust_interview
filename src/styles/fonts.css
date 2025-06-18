@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../assets/fonts/Pretendard-Regular.subset.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../assets/fonts/Pretendard-SemiBold.subset.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../assets/fonts/Pretendard-Bold.subset.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('../assets/fonts/NotoSansKR-Regular-Hestia.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
