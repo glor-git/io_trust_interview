@@ -1,54 +1,22 @@
-# React + TypeScript + Vite
+프론트엔드개발자 신영광 아이오트러스트 과제
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+아이오트러스트 메인 홈페이지를 클론 코딩했습니다.
+클론 서비스 URL: https://career.iotrust.kr/
 
-Currently, two official plugins are available:
+사용한 기술 스택
+라이브러리: react,
+상태관리: jotai, tanstack-query
+스타일: tailwind css
+패키지 매니져: bun
+번들링 도구: vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+구현 주요 설명:
+아이오트러스트의 헤더와,인터뷰, 루프배너를 구현했습니다.
+최대한 모든 UI가 반응형으로 동작하게 했고 과제 제출 시간이 한정됨에따라 우선순위를 임위로 설정하여 구현했습니다.
 
-## Expanding the ESLint configuration
+제한 내 구현하지 못한 부분 & 보완하고 싶은점
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. 처음 과제를 받고 계획은 UI를 완전히 똑같이 클론 코딩하려 했는데 시간 부족으로 레이아웃을 완벽하게 하지 못한 부분이 아쉽습니다.
+2. 아이오 트러스트는 이렇게 일해요, 아이오트러스트 생활, 이모저모, 더 몰입하고 성장할 수 있도록 아낌 없이 지원해요 등 구현 하지 못했습니다.
+3. 오히려 마크업할게 많은 서비스를 선택하기 보다 기능 위주이면서 코드 컨벤션이나 컴포넌트화를 더 보여줄 수 있는 깃헙 같은 서비스나 예시서비스를 선택했으면 더 좋았을 수 있겠다는 아쉬움이있습니다.
+4. 루프 슬라이더 구현에서 재사용성과 커스텀 그리고 동작을 완벽하게 구현하고 고려하고 싶었는데 시간 부족으로 애니메이션이 중간에 튕겨 나가게 구현됐습니다.

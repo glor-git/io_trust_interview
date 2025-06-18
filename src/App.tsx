@@ -9,6 +9,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<MainPage />} />
+          <Route path="/story" element={<></>} />
+          <Route path="/job_posting" element={<></>} />
+          <Route path="/interview" element={<></>} />
+          <Route path="/pr" element={<></>} />
+          <Route path="/faq" element={<></>} />
         </Route>
       </Routes>
     </BrowserRouter>

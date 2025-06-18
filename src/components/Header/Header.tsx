@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 
+import MenuIcon from './assets/svgs/MenuIcon'
 import { MENU_LIST } from './lib/const/menu'
 import useHeader from './lib/hooks/useHeader'
 
@@ -20,8 +21,11 @@ const Header = () => {
         <a href="/" className={cn('h-full')}>
           <img src={logo} alt="logo" className={cn('h-full')} />
         </a>
-
-        <nav className={cn('flex items-center gap-[16px]')}>
+        <nav className={cn('hidden', 'max-mobile:block cursor-pointer')}>
+          <MenuIcon />
+        </nav>
+        <nav
+          className={cn('flex items-center gap-[16px]', 'max-mobile:hidden')}>
           {MENU_LIST.map(({ name, path }) => {
             const isActive = currentPath === path
             return (
