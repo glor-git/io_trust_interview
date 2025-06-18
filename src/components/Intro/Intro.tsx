@@ -4,7 +4,8 @@ const Intro = () => {
   return (
     <div
       className={cn(
-        'flex flex-col justify-start items-start gap-[24px] w-full h-[204px] px-[48px] px-[24px]',
+        'flex flex-col justify-start items-start gap-[24px] w-full px-[48px]',
+        'max-mobile:px-[24px]',
       )}>
       <div>
         <h4>국내 1위 블록체인 지갑 &apos;디센트&apos;와</h4>

@@ -1,8 +1,11 @@
+import { useNavigate } from 'react-router-dom'
+
 import Button from '../Button/Button'
 
 import banner from '@/assets/images/mainBanner.webp'
 import { cn } from '@/lib/utils/tailwindUtil'
 const MainBanner = () => {
+  const navigate = useNavigate()
   return (
     <>
       <div
@@ -30,7 +33,12 @@ const MainBanner = () => {
           'flex justify-end items-center w-full my-[24px] px-[48px]',
           'max-mobile:px-[24px]',
         )}>
-        <Button>채용 공고 바로가기</Button>
+        <Button
+          onClick={() => {
+            navigate('/job_posting')
+          }}>
+          채용 공고 바로가기
+        </Button>
       </div>
     </>
   )

@@ -45,3 +45,14 @@ h6 {
   color: rgba(255, 255, 255);
   font-family: Pretendard, sans-serif;
 }
+
+@keyframes rolling-banner {
+  0% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+}
