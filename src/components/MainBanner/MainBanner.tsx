@@ -9,6 +9,7 @@ const MainBanner = () => {
   return (
     <>
       <div
+        area-label="메인 배너"
         className={cn(
           'relative flex flex-col justify-end items-start w-full h-[560px] py-[80px] px-[48px] bg-cover bg-center ',
           'max-mobile:h-[320px] max-mobile:py-[40px] max-mobile:px-[24px]',

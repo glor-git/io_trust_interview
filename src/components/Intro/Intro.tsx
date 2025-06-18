@@ -3,6 +3,7 @@ import { cn } from '@/lib/utils/tailwindUtil'
 const Intro = () => {
   return (
     <div
+      area-label="회사 소개"
       className={cn(
         'flex flex-col justify-start items-start gap-[24px] w-full px-[48px]',
         'max-mobile:px-[24px]',

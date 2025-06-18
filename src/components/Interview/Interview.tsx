@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils/tailwindUtil'
 const Interview = () => {
   return (
     <div
+      area-label="직원 인터뷰"
       className={cn(
         'flex flex-col justify-start items-start gap-[24px]  px-[48px] mt-[64px]',
         'max-mobile:px-[24px] ',
